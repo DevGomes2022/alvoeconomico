@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --cor--principal: #098698;
+    --cor--principalescura: #067181;
+    --cor--amarelo: #ffa500;
+    --cor--cinza: #3d444c;
+    --fonte-1: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    height: 3000px;
+}
+
+/* Estilos do menu */
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu-primeiro {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+    fill: black;
+}
+
+.menu-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo img:hover {
+    opacity: 80%;
+}
+
+.header-corte {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-titulo h1 {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--fonte-1);
+    color: black;
+}
+
+.lateral-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 10;
+    left: -2px;
+    padding-top: 10px;
+    overflow-x: hidden;
+    transition: 0.4s;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lateral-menu li {
+    text-align: initial;
+    margin-bottom: 20px;
+}
+
+.link-menu {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.link-menu a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000;
+    line-height: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: var(--fonte-1);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.active {
+    padding: 15px 30px;
+    color: var(--cor-principal);
+    background-color: rgba(9, 133, 152, 0.06);
+}
+
+.link-menu a:hover {
+    padding: 15px 30px;
+    color: var(--cor-principal);
+    background-color: rgba(9, 133, 152, 0.06);
+}
+
+.header-corte-lateral-menu {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*=====================================*/
+
+
+
+/*=====================================*/
+/*=====================================*/
+/*=====================================*/
+/*=====================================*/
